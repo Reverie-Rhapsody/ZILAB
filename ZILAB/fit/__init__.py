@@ -1,0 +1,1 @@
+from ZILAB.fit.Fit import BaseFit

@@ -29,14 +29,12 @@ ______|          DC Pulse  [Fixed]            |____________
 ___________________| Probe Pulse [Change]|_________________
 
 """
+from ZILAB.driver.UHFQA import zurich_qa
+from ZILAB.driver.HDAWG import zurich_awg
+from ZILAB.driver.PSG_E8257D import PSG_E8257D
+from ZILAB.driver.DP800 import DP800
+from ZILAB.db.MongoDB import mongodb
 
-import sys
-sys.path.append('D:\\Rhapsody\\Programs\\Zurich Instrument Qubit Characterization 2')
-from PSG_E8257D import PSG_E8257D
-from UHFQA import zurich_qa
-from HDAWG import zurich_awg
-from MongoDB import mongodb
-from DP800 import DP800
 import numpy as np
 import matplotlib.pyplot as plt
 import pyvisa
